@@ -14,7 +14,7 @@ if ($method == 'POST')
         
         case "yes":
 		
-        $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/Chatbot/getPOStatus/_get?number=$number&userChoice=$userChoice&userStatus=$action";
+        $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/Chatbot/getPOStatus/_get?number=$number;
 		     
 	     $opts = array('http' =>
  array(
