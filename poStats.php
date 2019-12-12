@@ -10,11 +10,11 @@ if ($method == 'POST')
 	$action=$json->queryResult->action;
 	$username = 'sguna002';
 	$password = 'sguna002';
-     switch ($userStatus) {
+     switch ($userChoice) {
         
         case "yes":
 		
-        $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/Chatbot/getPOStatus/_get?number=$number&userStatus=$action";
+        $URL="https://b2bprod01.7-eleven.com:9002/rest/Default/Chatbot/getPOStatus/_get?number=$number&userChoice=$userChoice&userStatus=$action";
 		     
 	     $opts = array('http' =>
  array(
